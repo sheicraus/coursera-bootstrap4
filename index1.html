@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Inserting the meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+    <title>Ristorante Con Fusion</title>
+</head>
+
+<body>
+    <!-- Creating a navigation tab -->
+    <nav class = "navbar navbar-dark navbar-expand-sm fixed-top">
+        <!-- Restricted to same width as rest of the container -->
+        <div class = "container">
+            <!-- Now create a toggle button which is important for smaller screen sizes -->
+            <button class = "navbar-toggler" type = "button" data-toggle = "collapse" data-target = "#Navbar">
+                <!-- Import the navbar toggle icon -->
+                <span class = "navbar-toggler-icon"></span>
+            </button>
+            <!-- Display the name of the company -->
+            <a class = "navbar-brand mr-auto" href = "#"><img src = "img/Logo.png" height = "30" width = "41"></a>
+            <div class = "collapse navbar-collapse" id = "Navbar">
+                <!-- Now declare the links , mr-auto helps set right margin -->
+                <ul class = "navbar-nav mr-auto">
+                    <!-- Set active for the tab you are on -->
+                    <li class = "nav-item active"><a class = "nav-link" href = "#"><span class = "fa fa-home fa-lg"></span> Home</a></li>
+                    <li class = "nav-item"><a class = "nav-link" href = "./aboutus.html"><span class = "fa fa-info fa-lg"></span> About</a></li>
+                    <li class = "nav-item"><a class = "nav-link" href = "./menu.html"><span class = "fa fa-list fa-lg"></span> Menu</a></li>
+                    <li class = "nav-item"><a class = "nav-link" href = "./contactus.html"><span class = "fa fa-address-card fa-lg"></span> Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Creating a header -->
+    <header class = "jumbotron">
+        <div class = "container">
+            <div class = "row row-header">
+                <div class = "col-12 col-sm-6">
+                    <h1>Ristorante con Fusion</h1>
+                    <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
+                </div>
+                <!-- Now add an image into the container -->
+                <div class = "col-12 col-sm align-self-center">
+                    <!-- So that the image is fluid -->
+                    <img src = "img/logo.png" class = "img-fluid">
+                </div>
+                <!-- Now add a reserve table button into the homepage -->
+                <div class = "col-12 col-sm align-self-center">
+                    <a role = "button" class="btn btn-warning btn-sm btn-block" href = "#reservationDiv">Reserve Table</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class = "container">
+        <div class = "row row-content align-items-center">
+            <div class = "col-12 col-sm-4 order-sm-last col-md-3">
+                <h3>Our Lipsmacking Culinary Creations</h3>
+            </div>
+            <div class = "col col-sm order-sm-first col-md">
+                <!-- Introduce a media div -->
+                <div class = "media">
+                    <!-- Introduce image -->
+                    <img class = "d-flex mr-3 img-thumbnail align-self-center" src = "img/uthappizza.png" alt = "uthappizza">
+                    <div class = "media-body">
+                        <h2 class = "mt-0">Uthappizza 
+                            <span class = "badge badge-danger">HOT</span>
+                            <span class = "badge badge-pill badge-secondary">$4.99</span>
+                        </h2>
+                        <p>A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
+                    </div>    
+                </div>
+            </div>
+        </div>
+
+
+        <div class = "row row-content align-items-center">
+            <div class = "col-12 col-sm-4 col-md-3">
+                <h3>This Month's Promotions</h3>
+            </div>
+            <!-- Introduce the content beside the headings -->
+            <div class = "col col-sm col-md">
+                <!-- Introduce a media div to wrap content beside media -->
+                <div class = "media">
+                    <!-- We want to introduce the headings and the media body first -->
+                    <div class = "media-body">
+                        <!-- Create the heading for the buffet -->
+                        <h2 class = "mt-0">Weekend Grand Buffet
+                            <!-- Create the nice red square -->
+                            <span class = "badge badge-danger">NEW</span>
+                        </h2>
+                        <!-- Descriptive information -->
+                        <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                    </div>
+                    <!-- -->
+                    <img class = "d-flex mr-3 img-thumbnail align self-center" src = "img/buffet.png" alt = "buffet">
+                </div>
+            </div>
+        </div>
+
+        <div class = "row row-content align-items-center">
+            <div class = "col-12 col-sm-4 order-sm-last col-md-3">
+                <h3>Meet our Culinary Specialists</h3>
+            </div>
+            <div class = "col col-sm order-sm-first col-md">
+                <div class = "media">
+                    <img class = "d-flex mr-3 img-thumbnail align-self-center" src = 'img/alberto.png' alt = "alberto">
+                    <div class = "media-body">
+                        <h2>Alberto Somayya</h2>
+                        <h4>Executive Chef</h4>
+                        <p>Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Create the reservation form, and row centered and add id so that can refer to that -->
+        <div class = "row row-content align-items-center justify-content-center" id = "reservationDiv">
+            <!-- Occupy 8 columns for small to XL screens, and 12 otherwise-->
+            <div class = "col-12 col-sm-8">
+                <!-- Now I want to create a card with the card header and the card body -->
+                <div class = "card">
+                    <!-- Create the header with yellow background and white texts -->
+                    <h3 class = "card-header bg-warning text-white">Reserve a Table</h3>
+                    <div class = "card-body">
+                        <!-- Now put the form inside the card body -->
+                        <form>
+                            <!-- Create a form group row for the number of guests -->
+                            <div class = "form-group row">
+                                <!-- Create the label for the number of guests, max size for small and 2 cols for anything above -->
+                                <label class="col-12 col-md-3">Number of Guests</label>
+                                <!-- Now create a column for the other parts -->
+                                <div class="col">
+                                    <!-- Write the 1st custom radio -->
+                                    <div class = "form-check form-check-inline">
+                                        <input class = "form-check-input" type = "radio" name = "guests" id = "guest1" value = "one">
+                                        <label class = "form-check-label" for = "guest1">1</label>
+                                    </div>
+                                    <!-- Write the 2nd custom radio -->
+                                    <div class = "form-check form-check-inline">
+                                        <input class = "form-check-input" type = "radio" name = "guests" id = "guest2" value = "two">
+                                        <label class = "form-check-label" for = "guest2">2</label>
+                                    </div>
+                                    <!-- Write the 3rd custom radio -->
+                                    <div class = "form-check form-check-inline">
+                                        <input class = "form-check-input" type = "radio" name = "guests" id = "guest3" value = "three">
+                                        <label class = "form-check-label" for = "guest3">3</label>
+                                    </div>
+                                    <!-- Write the 4th custom radio -->
+                                    <div class = "form-check form-check-inline">
+                                        <input class = "form-check-input" type = "radio" name = "guests" id = "guest4" value = "four">
+                                        <label class = "form-check-label" for = "guest4">4</label>
+                                    </div>
+                                    <!-- Write the 5th custom radio -->
+                                    <div class = "form-check form-check-inline">
+                                        <input class = "form-check-input" type = "radio" name = "guests" id = "guest5" value = "five">
+                                        <label class = "form-check-label" for = "guest5">5</label>
+                                    </div>
+                                    <!-- Write the 6th custom radio -->
+                                    <div class = "form-check form-check-inline">
+                                        <input class = "form-check-input" type = "radio" name = "guests" id = "guest6" value = "six">
+                                        <label class = "form-check-label" for = "guest6">6</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Create a form group row for the number of guests -->
+                            <div class = "form-group row">
+                                <!-- Create the headers for the Date and Time -->
+                                <label class = "col-12 col-md-3">Date and Time</label>
+                                <!-- Adjust the sizes depending on the window -->
+                                <div class = "col-12 col-md-4">
+                                    <!-- Input the form for the date -->
+                                    <input type="" class="form-control" id="guestdate" placeholder="Date">
+                                </div>
+                                <!-- Adjust the sizes depending on the window -->
+                                <div class = "col-12 col-md-4">
+                                    <!-- Input the form for the guest time -->
+                                   <input type="" class="form-control" id="guesttime" placeholder="Time">
+                                </div>
+                            </div>
+                            <!-- Now create a reserve button to end off the form -->
+                            <div class = "form-group row">
+                                <!-- We need to offset the button by a few columns -->
+                                <div class = "offset-md-3 col-md-10">
+                                    <button type="submit" class="btn btn-primary">Reserve</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <footer class = "footer">
+        <div class = "container">
+            <div class = "row justify-content-center">             
+                <div class = "col-4 offset-1 col-sm-2">
+                    <h5>Links</h5>
+                    <ul class = "list-unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class = "col-7 col-sm-5">
+                    <h5>Our Address</h5>
+                    <address>
+		              121, Clear Water Bay Road<br>
+		              Clear Water Bay, Kowloon<br>
+		              HONG KONG<br>
+		              <i class = "fa fa-phone fa-lg"></i>: +852 1234 5678<br>
+		              <i class = "fa fa-fax fa-lg"></i>: +852 8765 4321<br>
+		              <i class = "fa fa-envelope fa-lg"></i>: <a href="mailto:confusion@food.net">confusion@food.net</a>
+		           </address>
+                </div>
+                <div class = "col-12 col-sm-4 align-self-center">
+                    <div class = "text-center">
+                        <a class = "btn btn-social-icon btn-google" href="http://google.com/+"><i class = "fa fa-google-plus fa-lg"></i></a>
+                        <a class = "btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class = "fa fa-facebook fa-lg"></i></a>
+                        <a class = "btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class = "fa fa-linkedin fa-lg"></i></a>
+                        <a class = "btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class = "fa fa-twitter fa-lg"></i></a>
+                        <a class = "btn btn-social-icon btn-google" href="http://youtube.com/"><i class = "fa fa-youtube fa-lg"></i></a>
+                        <a class = "btn btn-social-icon" href="mailto:"><i class = "fa fa-envelope-o fa-lg"></i></a>
+                    </div>
+                </div>
+           </div>
+           <div class = "row">             
+                <div class = "col-auto">
+                    <p>© Copyright 2018 Ristorante Con Fusion</p>
+                </div>
+           </div>
+        </div>
+    </footer>
+     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
