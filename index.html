@@ -40,9 +40,51 @@
                                 class="fa fa-address-card fa-lg"></span>
                             Contact</a></li>
                 </ul>
+                <span class="navbar-text">
+                    <a data-toggle="modal" data-target="#loginModal">
+                        <span class="fa fa-sign-in"></span> Login
+                    </a>
+                </span>
             </div>
         </div>
     </nav>
+
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Login</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-sm-4">
+                                <input type="email" class="form-control" placeholder="Enter email">
+                            </div>
+
+                            <div class="form-group col-sm-4">
+                                <input type="password" class="form-control" placeholder="Password">
+                            </div>
+
+                            <div class="col-sm-auto">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="" id="rememberme">
+                                    <label class="form-check-label" for="rememberme">Remember me</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <button class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                            <button class="btn btn-primary btn-sm ml-1">Sign in</button>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
 
     <header class="jumbotron">
         <div class="container">
@@ -56,7 +98,10 @@
                     <img src="img/logo.png" class="img-fluid" alt="">
                 </div>
                 <div class="col-12 col-sm-3 align-self-center">
-                    <a href="#reserve" role="button" class="btn btn-sm btn-block btn-warning">Reserve Table</a>
+                    <a href="#reserve" role="button" class="btn btn-sm btn-block btn-warning" data-toggle="tooltip"
+                        data-html="true" title="Or Call us at <br><strong>+852 12345678</strong>"
+                        data-placement="bottom">Reserve
+                        Table</a>
                 </div>
             </div>
         </div>
@@ -134,27 +179,27 @@
                                 <label for="guests" class="col-md-2 col-form-label">Number of Guests</label>
                                 <div class="col-md-10">
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="guest1" id="guest1">
+                                        <input class="form-check-input" type="radio" name="guest" id="guest1">
                                         <label class="form-check-label" for="guest1">1</label>
                                     </div>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="guest2" id="guest2">
+                                        <input class="form-check-input" type="radio" name="guest" id="guest2">
                                         <label class="form-check-label" for="guest2">2</label>
                                     </div>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="guest3" id="guest3">
+                                        <input class="form-check-input" type="radio" name="guest" id="guest3">
                                         <label class="form-check-label" for="guest3">3</label>
                                     </div>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="guest4" id="guest4">
+                                        <input class="form-check-input" type="radio" name="guest" id="guest4">
                                         <label class="form-check-label" for="guest4">4</label>
                                     </div>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="guest5" id="guest5">
+                                        <input class="form-check-input" type="radio" name="guest" id="guest5">
                                         <label class="form-check-label" for="guest5">5</label>
                                     </div>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="guest6" id="guest6">
+                                        <input class="form-check-input" type="radio" name="guest" id="guest6">
                                         <label class="form-check-label" for="guest6">6</label>
                                     </div>
                                 </div>
@@ -235,6 +280,11 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
 </body>
 
 </html>
