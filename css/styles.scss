@@ -77,3 +77,19 @@ body {
     position: absolute;
     bottom: 0px;
 }
+
+// Assignment 4
+.modal {
+    .modal-header {
+        background: $background-dark;
+        color: floralwhite;
+
+        .close {
+            color: floralwhite;
+        }
+    }
+    
+    .modal-body {
+        background: $background-pale;
+    }
+}
