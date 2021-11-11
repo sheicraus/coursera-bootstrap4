@@ -23,6 +23,9 @@
     "grunt": "^1.4.1",
     "grunt-browser-sync": "^2.2.0",
     "grunt-cli": "^1.4.3",
+    "grunt-contrib-clean": "^2.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-imagemin": "^4.0.0",
     "grunt-contrib-watch": "^1.1.0",
     "grunt-sass": "^3.1.0",
     "htmlmin": "0.0.7",
@@ -40,6 +43,12 @@
     "bootstrap": "^4.6.1",
     "bootstrap-social": "^5.1.1",
     "font-awesome": "^4.7.0",
+    "grunt-contrib-concat": "^2.0.0",
+    "grunt-contrib-cssmin": "^4.0.0",
+    "grunt-contrib-htmlmin": "^3.1.0",
+    "grunt-contrib-uglify": "^5.0.1",
+    "grunt-filerev": "^2.3.1",
+    "grunt-usemin": "^3.1.1",
     "jquery": "^3.6.0",
     "popper.js": "^1.12.9"
   }
